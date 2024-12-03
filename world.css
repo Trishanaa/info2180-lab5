@@ -1,0 +1,108 @@
+/* Apply a gradient background with gold, purple, and white */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background: linear-gradient(135deg, #8a2be2, #ffd700, #ffffff);
+    background-size: 300% 300%;  /* Make the gradient more dynamic */
+    animation: gradientAnimation 6s ease infinite; /* Smooth gradient animation */
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Larger heading */
+}
+
+.container {
+    text-align: center;
+}
+
+label {
+    font-size: 18px;
+    color: white;
+    margin-right: 10px;
+}
+
+#country {
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #8a2be2;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #8a2be2;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #6a1db7;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* White with opacity for overlay effect */
+    color: #333;
+    border-radius: 5px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
